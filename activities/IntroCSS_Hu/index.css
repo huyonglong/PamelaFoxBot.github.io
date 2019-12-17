@@ -1,0 +1,79 @@
+body{
+  background-color: lightblue;
+}
+h1{
+  color:purple;
+}
+.intro{
+  background-color: lightgreen;
+  color: blue;
+  font-family: algerian;
+  text-align: justify;
+}
+.author{
+  color: red;
+  font-family: "monotype corsiva";
+  text-align: right;
+}
+.fontWeight{
+  font-weight: 900;
+  font-size: 2em;
+}
+.fortStyle{
+  font-style: oblique;
+  font-size: 50%
+}
+.fontStretch{
+  font-stretch: extra-condensed;
+  font-size: 20px;
+}
+.name{
+  font-family: "arial black";
+  color: darkgreen;
+  font-size: 5em;
+}
+.name1{
+  text-shadow: -5px 0px 0px yellow;
+}
+.name2{
+  text-shadow: 0px 10px 0px yellow;
+}
+.name3{
+  text-shadow: 10px -10px 0px yellow;
+}
+.name4{
+  text-shadow: 10px -10px 5px yellow;
+}
+.name5{
+  text-shadow: 10px -10px 10px yellow;
+}
+.p1, .p4, .p5, .p6{
+  border: inset 10px red;
+  margin-left: 50px;
+}
+.p2{
+  border-top: dotted 10px green;
+  border-bottom: solid 10px green;
+  border-left: groove 10px green;
+  border-right: groove 10px green;
+  margin: 30px;
+}
+.p3{
+  border: ridge 10px green;
+  margin-right: 100px;
+}
+.p4{
+  padding-left: 50px;
+}
+.p5{
+  padding: 30px;
+}
+.p6{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+p.first::first-letter{
+  font-size: 3em;
+  color: purple;
+  font-weight: bold;
+}

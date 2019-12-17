@@ -1,0 +1,14 @@
+body{
+  box-sizing: border-box;
+  padding: 20px;
+}
+.title{
+  width: 80%;
+  font-size: 2em;
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  text-shadow: 5px 5px 5px white;
+  box-shadow: 3px 3px 8px black;
+}

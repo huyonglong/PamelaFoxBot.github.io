@@ -1,0 +1,16 @@
+body{
+  padding: 20px;
+}
+h1{
+  padding: 20px;
+  text-align: center;
+}
+.alert1{
+  width: 50;
+}
+.alert h4{
+  color: red;
+}
+.alert-img{
+  width: 100%;
+}

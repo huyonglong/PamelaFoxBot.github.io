@@ -1,0 +1,30 @@
+body{
+  padding: 20px;
+}
+*{box-sizing: border-box;}
+.card1{
+  margin: 20px;
+  border: solid white 2px;
+  padding: 10px;
+  box-shadow: 5px 2px 5px white;
+  box-sizing: border-box;
+}
+.row{
+  margin-top: 30px;
+}
+.rightCol{
+  background-color: lightblue;
+}
+.rightCol{
+  border: solid pink;
+}
+.subcol{
+  float: left;
+  margin-top: 20px;
+}
+.card2{
+  margin: 20px;
+  border: solid pink 2px;
+  padding: 10px;
+  box-sizing: border-box;
+}
