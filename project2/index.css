@@ -1,0 +1,436 @@
+body{
+  background-color: white;
+  padding: 10px;
+}
+* { box-sizing: border-box; }
+ .container1{
+   width: 100%;
+   height: 300px;
+   margin-top: 10px;
+ }
+.zoom{
+  position: absolute;
+  animation: zoom 8s infinite;
+}
+@keyframes zoom {
+  0%{transform: scale(0);}
+  50%{transform: scale(1);}
+  100%{transform: scale(0);}
+}
+.spin{
+  position: absolute;
+  animation: spin 10s infinite;
+  margin-left: 90%;
+  margin-bottom: 40px;
+}
+@keyframes spin {
+  0%{transform:rotate(0deg);}
+  30%{transform:rotate(360deg);}
+  60%{transform:rotate(-360deg);}
+  100%{transform:rotate(0deg);}
+}
+.p1{font-size: 7em;
+   text-align: center;
+   color: lightblue;
+   font-family: "French Script MT";
+}
+.p2{
+  color: orange;
+  opacity: 0.5;
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: -3.8%;
+}
+.slideshow1 {
+  overflow: hidden;
+  width: 1800px;
+  height: 56px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px black;
+}
+.slidewrapper{
+  height: 100%;
+  width: 5400px;
+  animation: slideshow 12s infinite;
+}
+@keyframes slideshow {
+  0%{margin-left: 0px;}
+  33.3%{margin-left: -1800px;}
+  66.6%{margin-left: -3600px;}
+  100%{margin-left: 0px;}
+  }
+.slide{
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-family: monospace;
+}
+.w:nth-child(1) {
+ background-color:lightblue;
+}
+.w:nth-child(2) {
+ background-color: orange;
+}
+.w:nth-child(3) {
+ background-color: lightpink;
+}
+.backgroud1,.backgroud2{
+  width: 1800px;
+  height:850px;
+  margin:5px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.bg1 img{
+  width: 100%;
+  height: 100%;
+}
+.bg1{
+  width:100%;
+  height:100%;
+  position: relative;
+  filter:contrast(70%);
+}
+.img_txt{
+ width: 700px;
+ height: 400px;
+ color:black;
+ position: absolute;
+ border: solid 5px white;
+ padding: 10px;
+ font-size: 1.35em;
+ box-shadow: 0px 0px 5px 5px black;
+ bottom: -300px;
+ font-family:"impact";
+ background-color: rgba(128, 128, 64, 0.7);
+ padding:10px;
+ margin-left: 20px;
+}
+.bg2{
+  width: 1400px;
+  height: 850px;
+  background-image: linear-gradient(to top left,rgba(128, 128, 64, 0.7),rgba(128, 0, 255, 0.5)),url("images/intro2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position:relative;
+  bottom: 66px;
+  margin-left: 150px;
+}
+.title2{
+  text-align: center;
+  font-size: 5em;
+  color: Maroon;
+}
+.imgg2_txt{
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5em;
+  width: 500px;
+  margin-left: 450px;
+  color: white;
+}
+.container2{
+  width: 100%;
+  height: 700px;
+  margin-top: 50px;
+}
+.lotion1,.lotion2,.lotion3,.sg1,.sg2,.sg3{
+  width: 500px;
+  height: 650px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.open{
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding:10px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.open:hover{
+  background-color: lightgray;
+  color:black;
+}
+.lotion1 img{
+  height: 65%;
+  margin-left: 28%;
+  margin-top: 5%;
+}
+.lotion1 h2{
+  text-align: center;
+  color: orange;
+}
+.lotion1 p{
+  text-align: center;
+  opacity: 0.5;
+  color: green;
+}
+.lotion1 a{
+  margin-left: 37.5%;
+}
+.ltwindow{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.ltwindow:target{
+  opacity: 1;
+  pointer-events:auto;
+  transition: ease-in 2s;
+}
+.lotion1_msg,.lotion2_msg,.lotion3_msg.sg1msg,.sg2msg,.sg3msg{
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  background-color:rgba(100, 100, 100, 0.5) ;
+  top: 50px;
+  left: 600px;
+  padding:20px;
+}
+.lotion1_img,.lotion3_img{
+height: 65%;
+margin-left: 35%;
+bottom: 10%;
+}
+.lotion1_img{
+  height: 65%;
+  margin-left: 30%;
+  bottom:10%;
+}
+.lotion1_msg h2{
+  text-align: center;
+  color: orange;
+  font-size: 1.5em;
+}
+.lotion1_msg h4{
+  text-align: center;
+  font-size: 1.2em;
+  color: blue;
+  opacity: 0.5;
+}
+.lotion1_msg p{
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+.close{
+  height:20px;
+  width: 20px;
+  border: solid black
+  color:white;
+  }
+.modal-close1{
+  position: absolute;
+  margin-left: 93%;
+  top:0;
+}
+.modal-close1:hover{
+  background-color: lightgray;
+  border-radius: 20%;
+}
+.modal-close:hover{
+  color: red;
+  text-decoration: underline;
+  background-color: lightgray;
+}
+.modal-close{
+  padding:3px;
+  color: gray;
+  background-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-left: 75%;
+}
+.modal-close:hover{
+  color: red;
+  text-decoration: underline;
+  background-color: lightgray;
+}
+.lotion2 img{
+  height: 65%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.lotion3 img{
+  height: 65%;
+  margin-left: 28%;
+  margin-top: 5%;
+}
+.lotion2 h2{
+  text-align: center;
+  color: orange;
+}
+.lotion3 h2{
+  text-align: center;
+  color: orange;
+}
+.lotion3 a{
+  margin-left: 40%;
+}
+.lotion2,.lotion3 p{
+  text-align: center;
+  opacity: 0.5;
+  color: green;
+}
+.lotion2_msg,.lotion3_msg h2{
+  text-align: center;
+  color: pink;
+  font-size: 1.5em;
+}
+.lotion2_msg,.lotion3_msgh4{
+  text-align: center;
+  font-size: 1.2em;
+  color: blue;
+  opacity: 0.5;
+}
+.lotion2_msg,.lotion3_msg p{
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+.sg1 img{
+  height: 65%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.sg1 h2{
+  text-align: center;
+  color: orange;
+}
+.sg1 p{
+  text-align: center;
+  opacity: 0.5;
+  color: green;
+}
+.sg1 a{
+  margin-left: 37.5%;
+}
+.sg2 img{
+  height: 65%;
+  margin-left: 32%;
+  margin-top: 5%;
+}
+.sg2 h2{
+  text-align: center;
+  color: orange;
+}
+.sg2 p{
+  text-align: center;
+  opacity: 0.5;
+  color: green;
+}
+.sg2 a{
+  margin-left: 37.5%;
+}
+.sg3 img{
+  height: 65%;
+  margin-left: 22%;
+  margin-top: 5%;
+}
+.sg3 h2{
+  text-align: center;
+  color: orange;
+}
+.sg3 p{
+  text-align: center;
+  opacity: 0.5;
+  color: green;
+}
+.sg3 a{
+  margin-left: 37.5%;
+}
+.sg1img,.sg3img{
+height: 65%;
+margin-left: 35%;
+bottom: 10%;
+}
+.sg2img{
+  height: 65%;
+  margin-left: 30%;
+  bottom:10%;
+}
+.sg1msg h2{
+  text-align: center;
+  color: orange;
+  font-size: 1.5em;
+}
+.sg1msg h4{
+  text-align: center;
+  font-size: 1.2em;
+  color: blue;
+  opacity: 0.5;
+}
+.sg1msg p{
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+.sg2msg,.sg3msg h2{
+  text-align: center;
+  color: orange;
+  font-size: 1.5em;
+}
+.sg2msg,.sg3msg h4{
+  text-align: center;
+  font-size: 1.2em;
+  color: blue;
+  opacity: 0.5;
+}
+.sg2msg,.sg3msg p{
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+@media only screen and (max-width: 1024px) {
+  body{background-color:yellow;}  .container1{ height: 550px;}
+  .container2{width: 30%; height: 550px; font-size: 20px;}
+  .container3{width: 30%; height: 550px;font-size: 20px;}
+  .containerall{ width:100% ;margin-top: 30px;font-size: 20px;}
+}
+.container3{
+  width: 100%;
+  padding:15px;
+  height: 200px;
+  background-color: gray;
+}
+.con1,.con2,.con3,.con4{
+  width: 20%;
+  height: 150px;
+  float: left;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.con1,.con2,.con3,.con4 h3{
+  text-align: center;
+}
+.con1,.con2,.con3,.con4 p{
+  text-align: center;
+}
+.con5
+{
+  float: left;
+height: 300px;
+color: white;
+}
+.con5 div{
+  float: left;
+  margin-top: 10px;
+}
+.con5 img {
+width: 30px;
+height: 30px;
+}
