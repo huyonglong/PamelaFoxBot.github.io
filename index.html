@@ -7,42 +7,228 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>modal using bootstrap</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Project3 by Yonglong_Hu</title>
   </head>
-  <body>
-    <div class="container">
-      <h3>Modal Window</h3>
-      <!-- button to open the model window-->
-      <button type="button" class="btn btn-primary" data-toggle="modal" dota-target="#myModal">Open Modal Window</button>
-      <!-- The modal-->
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <!--modal header -->
-            <div class="modal-header bg-warning">
-              <h4>This is the title of the modal window</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- modal body-->
-            <div class="modal-body">
-              <h5>New York City <small>The Big Apple</small></h5>
-              <img src="'nyc.jpg'" alt="NYC Image" title="New York City" style="width:100%;">
-              <p>This paragraph describe New York City</p>
-            </div>
-            <!-- modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Clsoe</button>
+  <body data-spy="scroll" data-target="navbar-site">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+      <button type="button" name="button" class="navbar-toggler" data-toggler="collapseTab" data-target="#collapseTab" aria-control="collapseTab" aria-expamded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapseTab">
+        <div class="navbar-nav">
+        <a href="#Home" class="nav-item nav-link active">Home</a>
+        <a href="#Projects" class="nav-item nav-link">Web Technology Projects</a>
+        <a href="#Act" class="nav-item nav-link">Class Activities</a>
+        <a href="#Con"class="nav-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="bg-info " id="Home">Home</h1>
+    <br><br>
+    <div>
+    <div class="cl1img">
+        <img src="images/logos/cl1.png" alt="cloud image"></div>
+        <div class="cl2img">
+        <img src="images/logos/cl2.png" alt="cloud image"></div>
+      </div>
+        <br><br><br><br><br><br>
+        <hr>
+        <br><br><hr>
+        <img src="images/photons/intro.jpg" alt="Introduction picture" title="Introduction picture" width="1330">
+        <div class="jumbotron">
+          <h1 class="display-4">Hello</h1>
+          <p class="lead">My major is Internet and Information Technology. In the future, I may be a partial coder, and maybe I will be able to do other similar work like the partial coder or other work</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Home</a>
+          </p>
+        </div>
+        <hr>
+        <!-- slideshow -->
+        <div class="carousel slide carouselcontainer " data-ride="carousel" id="slideshow">
+          <div class="carousel-item active carouselSize">
+            <img src="images/photons/pj1img.png" alt="Project1" title="Visit Project1" class="imag-thumbnail">
+            <div class="carousel-caption captionCSS"><a href="project1/index.html" target="_blank"><strong>Visit Project1</strong></a></div>
+          </div>
+
+          <div class="carousel-item carouselSize ">
+            <img src="images/photons/pj2img.png" alt="Project2" title="Visit Project2" class="imag-thumbnail">
+            <div class="carousel-caption captionCSS"><a href="project2/index.html" target="_blank"><strong>Visit Project2</strong></a></div>
+          </div>
+
+          <div class="carousel-item carouselSize">
+            <img src="images/photons/bs.png" alt="Activities" title="Class Activities" class="imag-thumbnail">
+            <div class="carousel-caption captionCSS"><a href="#Act"><strong>Class Activities</strong></a></div>
+
+          </div>
+          <a href="#slideshow" data-slide="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span></a>
+          <a href="#slideshow" data-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></a>
+
+          <ul class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1" ></li>
+            <li data-target="#slideshow" data-slide-to="2" ></li>
+          </ul>
+        </div>
+        <hr>
+        <ul class="nav nav-tabs justify-content">
+          <li class="nav-item"><a href="#Home" class="nav-item nav-link">Home</a></li>
+          <li class="nav-item"><a href="#Projects" class="nav-item nav-link active">Web Technology Projects</a></li>
+          <li class="nav-item"><a href="#Act" class="nav-item nav-link">Class Activities</a></li>
+          <li class="nav-item"><a href="#Con"class="nav-link">Contact Us</a></li>
+        </ul>
+        <br><br><hr>
+        <h2 class="text-light bg-dark">Web Technology Projects</h2>
+        <h2 id="Projects">Project</h2>
+        <div class=" row containerpro">
+          <div class="col-md-6 " style="background-color:lightyellow"><a href="project1/index.html" target="_blank" class="linkmodal"><img src="images/photons/pj1img.png " alt="Project1"
+            title="Project1"style="width:800px; height:700px;" class="imgpro img-thumbnail daaimg "></a>
+            <button type="button" class="btn btn-info button10" data-toggle="modal"
+            data-target="#myModal"><p class="txtpro">Project1 <strong>Dreaming Place</strong></p></button>
+            <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3>HTML Project1 - Dreaming Place</h3>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body bg-info">
+                   <h5><small></h5>
+                     <img src="images/photons/northern light.jpg " alt="Project1"
+                       title="Project1"style="width:50%;">
+                     <p>Project 1 conssits in creating an information website. The information of the website is about a place (city, country, or state) where I want inform people about that beatiful place <br>
+                     I create a website about Iceland. I chose because it is a different place to USA, China, and other different places especially for the bolial lights. One of my future bisits will be to see with my own eyes this wonderful natural light.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="project1/index.html" target="_blank" class="footera"><p class="footerp"><strong>Visit My Iceland</strong>Project1</p></a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div><!-- end of modal -->
-    </div><!-- end of container -->
+
+          <div class="col-md-6 " style="background-color:lightblue"><a href="project2/index.html" target="_blank" class="linkmodal"><img src="images/photons/pj2img.png" alt="Project2"
+            title="Project2" style="width:800px; height:700px;" class="imgpro img-thumbnail daaimg "></a>
+            <button type="button" class="btn btn-info button11" data-toggle="modal"
+            data-target="#myModal2"><p class="txtpro">Project2 <strong>Sale Website</strong></p></button><div class="modal" id="myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3>HTML and CSS Project2 - Sale Website</h3>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body bg-info">
+                   <h5><small></h5>
+                     <img src="images/photons/pj2img.png" alt="Project2"
+                       title="Project2" style="width:50%;">
+                     <p>Project 2 consists of reating a ales webpage. The purpose of project 2 is to apply the knledge of colors, image manipulation, animation, slideshow, and modal window using CSS to create about sales page.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="project2/index.html" target="_blank" class="footera"><p class="footerp"><strong>Visit My Tom Shop</strong>Project2</p></a>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+              </div>
+             </div>
+           </div>
+         </div>
+         <br><br><hr>
+         <ul class="nav nav-tabs justify-content">
+           <li class="nav-item"><a href="#Home" class="nav-item nav-link">Home</a></li>
+           <li class="nav-item"><a href="#Projects" class="nav-item nav-link">Web Technology Projects</a></li>
+           <li class="nav-item"><a href="#Act" class="nav-item nav-link active">Class Activities</a></li>
+           <li class="nav-item"><a href="#Con"class="nav-link">Contact Us</a></li>
+         </ul>
+
+        <br><br><hr>
+        <h2 id="Act">Class Activities</h2>
+        <br>
+        <div class="row">
+          <div class="col-sm-4 aa">
+            <img src="images/photons/html.jpg" alt="HTML image"title="HTML Image" style="width:400px; height:300px;">
+            <h3>HTML</h3>
+            <p><i>At the begging of the class , I learn how to create structures using only HTML</i></p>
+            <hr>
+            <ul class="list-unstyled"> <p class="text-uppercase font-weight-bold">Class Activities</p>
+              <li><a href="activities/activity1/index.html">HTML - Activity1</a></li>
+              <hr>
+              <li><a href="activities/activity2/index.html">HTML - Activity2</a></li>
+              <hr>
+              <li><a href="activities/activity3 hyperlink/index.html">HTML - Activity3 - hyperlink</a></li>
+              <hr>
+            </ul>
+          </div>
+          <div class="col-sm-4 aa">
+            <img src="images/photons/css.png" alt="CSS image"title="CSS Image" style="width:400px; height:300px;">
+            <h3>CSS</h3>
+            <p><i>After we learned how to build a HTML structure , we were later introduced to CSS and how it to style elements for code.</i></p>
+              <hr>
+              <ul class="list-unstyled"> <p class="text-uppercase font-weight-bold">Class Activities</p>
+                <li><a href="activities/IntroCSS_Hu/index.html">CSS - Intro</a></li>
+                <hr>
+                <li><a href="activities/css activity3_Hu/index.html">CSS - Activity</a></li>
+                <hr>
+                <li><a href="activities/css animation_Yonglong_Hu/index.html">CSS - Animation</a></li>
+                <hr>
+                <li><a href="activities/css color_Yonglong Hu/index.html">CSS - colors</a></li>
+                <hr>
+                <li><a href="activities/css navigation_YonglongHu/index.html">CSS - Navigation</a></li>
+                <hr>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 aa">
+              <img src="images/photons/bs.png" alt="Bootstarp4 Image"title="Bootstarp4 Image" style="width:400px; height:300px;">
+              <h3>Bootstarp4</h3>
+              <p><i>After we understood and know how to work with HTML and CSS,we stared to learn how to use classes in Boostarp 4. Boostarp 4 os the most popular HTML, CSS, and JavaScript framework for devepoping responsive, mobile-first websites.</i></p>
+                <hr>
+                <ul class="list-unstyled"> <p class="text-uppercase font-weight-bold">Class Activities</p>
+                  <li><a href="activities/bootstrap4 Intro_Yonglong Hu/index.html">Bootstarp4 - Intro</a></li>
+                  <hr>
+                  <li><a href="activities/bootstarp4 layout by Yonglong Hu/index.html">Bootstarp4 - layout</a></li>
+                  <hr>
+                  <li><a href="activities/bootstarp4 modal_Yonglong Hu/index.html">Bootstarp4 - modal</a></li>
+                  <hr>
+                  <li><a href="activities/bootstrap4 NavBar by Yonglong Hu/index.html">Bootstarp4 - navBarActivity</a></li>
+                  <hr>
+                  <li><a href="activities/bootstrap4 collapsible_slideshow_yonglong Hu/index.html">Bootstarp4 - collapsible - slideshow</a></li>
+                  <hr>
+                </ul>
+              </div>
+            </div><!-- end of row -->
+
+            <ul class="nav nav-tabs justify-content">
+              <li class="nav-item"><a href="#Home" class="nav-item nav-link">Home</a></li>
+              <li class="nav-item"><a href="#Projects" class="nav-item nav-link">Web Technology Projects</a></li>
+              <li class="nav-item"><a href="#Act" class="nav-item nav-link">Class Activities</a></li>
+              <li class="nav-item"><a href="#Con"class="nav-link active">Contact Us</a></li>
+            </ul>
+            <br><br><br><br><hr>
+
+          <div class="containercon" id="Con">
+            <div class="container3 row ">
+              <div class="col-md-3"><div class="number1"><h4>Phone Number</h4><p>(000)000-0000</p></div></div>
+              <div class="col-md-3"><div class="number1"><h4>EMAIL</h4><p>http://www.gmail.com/ </p></div></div>
+              <div class="col-md-3"><div class="number1"><h4>ADDRESS</h4><p>222-05 56th Ave, Bayside, NY 11364</p></div></div>
+            </div>
+            <br>
+            <div class="whiteline"></div>
+
+            <div class="conmedia">
+              <p class="conmediatxt">Follow Me</p>
+              <div><a target="_blank" title="follow me on Twitter" href="https://www.twitter.com/"class="media1"><img alt="follow me on Twitter"
+                src="images/logos/twitter.png" border=0></a> </div>
+                <div><a target="_blank" title="follow me on Intsagram " href="https://www.Intsagram.com/"class="media1"><img alt="follow me on Instagram" src="images/logos/instagram.png" border=0></a></div>
+                  <div><a target="_blank" title="follow me on Youtube" href="https://www.youtube.com/"><img alt="Youtube" src="images/logos/youtube.png" border=0 class="media1"></a></div>
+                    <div><a target="_blank" title="follow me on Facebook" href="https://www.facebook.com/"><img alt="follow me on Facebook" src="images/logos/facebook.png" border=0 class="media1"></a></div>
+                    </div>
+                    <h5 class="h5" >2019 @ Project3 by Yonglong Hu</h5>
+                  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
